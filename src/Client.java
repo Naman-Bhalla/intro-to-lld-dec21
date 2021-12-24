@@ -16,9 +16,9 @@ public class Client {
         Animal f = new Cows();
         Husky h = new Husky();
 
-        List<Animal> l = List.of(e, f, c, h);
+        List<Animal> l = List.of(e, f, c, h); // Animal a{a, f, c, h}
 
-        for (Animal z: l) {
+        for (Animal z: l) {  // for (Animal Z: L) for (int i = 0; i < l.size(); ++i)
             z.walk();
         }
 
@@ -36,8 +36,31 @@ public class Client {
 
         d1.walk();
         d1.walk("Something");
+
+
+        // factory design pattern
+//        Animal a = AnimalFacotry.getCoolAnimal();
     }
 
 
-
 }
+
+
+// takeAnimalToDoctor(Animal a) {}
+
+// main() {
+//   Dog d = new Dog();
+//   takeAnimalToDoctor(d);
+
+//   Animal a = d;
+//
+// }
+
+
+// Implemeneting Chess
+// Pieces - move()
+// Pawn - Pieces
+// Elephant - Pieces
+// Camel - Pieces
+// King - Pieces
+// SlowMovement, FastMovement, ZigZagMoveemt

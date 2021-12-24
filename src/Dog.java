@@ -10,7 +10,7 @@ public class Dog extends Animal implements Swimmable {
 
     @Override
     public void walk() {
-        super.walk();
+//        super.walk();
         System.out.println("Dog walking");
     }
 
@@ -22,3 +22,9 @@ public class Dog extends Animal implements Swimmable {
         }
     }
 }
+
+// A ->             B ->         C -D
+// walk() {                     walk()
+//    super.walk()                 do something in C
+//    print(do in A)
+// }
